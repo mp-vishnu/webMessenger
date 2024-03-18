@@ -1,0 +1,125 @@
+.displayName {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .displayPic {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .displayPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .userName {
+    flex: 1;
+  }
+  
+  .chatHeader {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .chatArea {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set height to full viewport height */
+  }
+  
+  .messageSections {
+    flex-grow: 1; /* Expand to fill available space */
+    overflow-y: auto; /* Add vertical scroll if needed */
+    padding: 10px;
+  }
+  .messageStyle1 {
+    background-color: aqua;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px; /* Optional: Add padding for better appearance */
+  }
+
+  .messageStyle2 {
+    background-color: #90EE90;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px; /* Optional: Add padding for better appearance */
+  }
+  
+  .chatControls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 30%; /* Set to the width of the active users list */
+    right: 0;
+  }
+  
+  .chatControls textarea {
+    flex: 1;
+    resize: none;
+    margin-right: 8px;
+  }
+  
+
+  .messageSections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add margin between messages */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 90%; /* Limit the height to enable scrolling */
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Define the transition for the transform property */
+  }
+  
+  .message.left {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+  }
+  
+  .message.right {
+    align-self: flex-end;
+    background-color: #e2f2e9;
+  }
+  
+  .message:hover {
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+  }
+  
+  .homepageprofilepic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .homepageprofilepic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .homename {
+    top:80%;
+    left:70%;
+    color:'red'
+  }
